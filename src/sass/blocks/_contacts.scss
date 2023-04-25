@@ -1,0 +1,41 @@
+.contacts {
+    min-height: 250px;
+    .container {
+        padding: 0 100px 40px 100px;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: flex;
+    }
+    &__col2 {
+        margin-left: 100px;
+    }
+    &__subtitle {
+        font-family: 'Oswald';
+        font-weight: 600;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    &__text {
+        font-family: 'Oswald';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 232.2%;
+        text-transform: uppercase;
+        color: #000000;
+        a {
+            font-size: 14px;
+            color: #265C73;
+            &:hover {
+                color: #265C73;
+            }
+            &:after {
+                background: #265C73;
+            }
+            &:hover:after {
+                background-color: #265C73;
+            }
+        }
+    }
+}

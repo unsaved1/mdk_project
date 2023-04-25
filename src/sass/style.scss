@@ -1,0 +1,69 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+
+
+* {
+    font-family: 'Oswald';
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s all;
+    &:hover {
+        color: #000;
+    }
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+        width: 0;
+        height: 2px; 
+        background-color: black; 
+        transition: width 0.3s; 
+    }
+    &:hover:after {
+        content: "";
+        width: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        height: 2px; /* Высота линии */
+        background-color: black; /* Цвет подчеркивания при появлении линии*/
+        transition: width 0.3s;  /* Время эффекта */
+    }
+}
+
+.container {
+    width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+h1, h2{
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    font-family: 'Oswald';
+    font-weight: 600;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #265C73;
+}
+
+
+
+
+@import 'blocks/header';
+@import 'blocks/slider';
+@import 'blocks/produce';
+@import 'blocks/reviews';
+@import 'blocks/contacts';
+@import 'blocks/footer';
