@@ -79,6 +79,12 @@ gulp.task('fonts', function() {
 		.pipe(browserSync.stream());
 });
 
+gulp.task('pages', function() {
+	return gulp.src('src/assets/pages/**/*')
+		.pipe(gulp.dest('dist/assets/pages'))
+		.pipe(browserSync.stream());
+})
+
 gulp.task('watcher', function() {
 	gulp.watch('src/sass/**/*.+(scss|sass|css)', gulp.parallel('styles'));
 	gulp.watch('src/*.html').on('change', gulp.parallel('html'));
@@ -86,9 +92,10 @@ gulp.task('watcher', function() {
 	gulp.watch('src/assets/images/**/*').on('all', gulp.parallel('images'));
 	gulp.watch('src/assets/icons/**/*').on('all', gulp.parallel('icons'));
 	gulp.watch('src/assets/fonts/**/*').on('all', gulp.parallel('fonts'));
+	gulp.watch('src/assets/pages/**/*').on('change', gulp.parallel('pages'));
 });
 
-const parallelTasks = gulp.parallel('watcher', 'server', 'html', 'styles', 'scripts', 'images', 'icons', 'fonts');
+const parallelTasks = gulp.parallel('watcher', 'server', 'html', 'styles', 'scripts', 'images', 'icons', 'fonts', 'pages');
 
 
 

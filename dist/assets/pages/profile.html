@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="../../css/style.min.css">
+</head>
+<body>
+    <header class="header header_out">
+        <nav class="header__nav">
+            <div class="header__logo">
+                <a href="../../index.html"><img src="../images/logo.png" alt="logo"></a>
+            </div>
+
+            <div class="header__item"><a href="about.html">О предприятии</a></div>
+            <div class="header__item"><a href="#">Деятельность</a></div>
+            <div class="header__item"><a href="#">Отзывы</a></div>
+            <div class="header__item"><a href="#">Продукция</a></div>
+        </nav>
+
+        <a class="header__profile-link" href="profile.html"><button class="header__btn btn">Личный кабинет</button></a>
+    </header>
+
+    <main class="profile">
+        <div class="container">
+            <h1 class="profile__title title">личный кабинет</h1>
+            <div class="profile__desk">
+                <div class="profile__personal-info">
+                    <div class="profile__photo">
+                        <div><img src="../icons/camera.svg" alt="your photo"></div>
+                        <div class="profile__subtitle">добавить фото</div>
+                    </div>
+
+                    <div class="profile__wrapper">
+                        <div class="profile__item profile__item_initials">
+                            <div class="profile__name">ФИО</div>
+                            <input class="profile__input" readonly type="text" value="Фирсов Адам Леонидович" name="name">
+                        </div>
+                        <div class="profile__item profile__item_city">
+                            <div class="profile__name">Город</div>
+                            <input class="profile__input" readonly type="text" value="Уфа" name="city">
+                        </div>
+                    </div>
+                </div>
+                <div class="profile__account-info">
+                    <div class="profile__item">
+                        <div class="profile__name">ЛОГИН</div>
+                        <input class="profile__input" readonly type="text" value="UNSAVED" name="login">
+                    </div>
+                    <div class="profile__item">
+                        <div class="profile__name">ЭЛ. ПОЧТА</div>
+                        <input class="profile__input" readonly type="email" value="MDKPROJECT@GMAIL.COM" name="email">
+                    </div>
+                    <div class="profile__item">
+                        <div class="profile__name">ПАРОЛЬ</div>
+                        <input class="profile__input" readonly type="password" value="***************" name="password">
+                    </div>
+
+                    <div class="profile__count">КОЛ-ВО ЗАКАЗАННЫХ ТОВАРОВ: <span>40</span></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+	<footer class="footer">
+		<div class="text">Все права защищены © 2023
+		</div>
+
+		<div class="footer__wrapper">
+			<a href="#" class="footer__text">контакты</a>
+			<a href="#" class="footer__text">политика конфидециальности</a>
+		</div>
+	</footer>
+</body>
+</html>

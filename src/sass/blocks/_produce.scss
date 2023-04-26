@@ -1,11 +1,13 @@
 .produce {
     min-height: 450px;
     padding: 30px 0 0 0;
+    
     &__btns {
         margin-left: 100px;
         width: 300px;
         display: flex;
         justify-content: space-between;
+        
     }
     &__btn {
         width: 150px;
@@ -14,6 +16,7 @@
         background: none;
         font-weight: 600;
         text-transform: uppercase;
+        transition: 0.4s all;
         &_active {
             background: #D9D9D9;
             border-radius: 5px;
@@ -21,8 +24,13 @@
         }
     }
     &__items {
+        display: none;
         margin-top: 30px;
-        display: flex;
+        animation-name: itemsAnim;
+        animation-duration: 0.4s;
+        &_active {
+            display: flex;
+        }
     }
     &__item {
         margin: 0 30px;
@@ -43,7 +51,11 @@
     &__item:nth-child(2) {
         background: url('../assets/images/produce/img1.png') center center/cover no-repeat;
     }
+    #prod {
+        background: url('../assets/images/produce/img3.png') center center/cover no-repeat;
+    }
     &__text {
+        padding: 10px;
         height: 100px;
         display: flex;
         justify-content: center;

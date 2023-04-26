@@ -1,0 +1,15 @@
+.about {
+    padding: 50px 0;
+    .container {
+        width: 800px;
+    }
+    &__text {
+        margin-top: 30px;
+    }
+    &__img {
+        width: 800px;
+        img {
+            width: 100%;
+        }
+    }
+}

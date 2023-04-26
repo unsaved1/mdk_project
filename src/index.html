@@ -4,52 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Оренбургский радиатор</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <header class="header">
         <nav class="header__nav">
             <div class="header__logo">
-                <a href="#"><img src="assets/images/logo.png" alt="logo"></a>
+                <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
             </div>
 
-            <div class="header__item"><a href="#">О предприятии</a></div>
+            <div class="header__item"><a href="assets/pages/about.html">О предприятии</a></div>
             <div class="header__item"><a href="#">Деятельность</a></div>
-            <div class="header__item"><a href="#">Отзывы</a></div>
+            <div class="header__item"><a href="#reviews">Отзывы</a></div>
             <div class="header__item"><a href="#">Продукция</a></div>
         </nav>
 
-        <button class="header__btn btn"><a href="#">Личный кабинет</a></button>
+		<a class="header__profile-link" href="assets/pages/profile.html"><button class="header__btn btn">Личный кабинет</button></a>
+        
     </header>
 
     <section class="slider">
+		
+		<div class="slider__nav">
+			<div class="slider__nav_wrapper">
+				<div class="slider__indicators">
+					<!-- <div class="slider__dot slider__dot_active"></div>
+					<div class="slider__dot"></div> -->
+				</div>
+		
+				<div class="slider__arrow slider__arrow_up">
+					<img src="assets/icons/slider_arrow.svg" alt="">
+				</div>
+		
+				<div class="slider__arrow slider__arrow_down">
+					<img src="assets/icons/slider_arrow.svg" alt="">
+				</div>
+			</div>
+		</div>
+
 		<div class="slider__inner">
 			<div class="slider__item">
 				<div class="container">
 					<div class="slider__item-content">
-						<div class="slider__arrow slider__arrow_up">
-							<img src="assets/icons/slider_arrow.svg" alt="">
-						</div>
-
 						<h1 class="slider__text">«Оренбургский радиатор» инвестирует в производство алюминиевых теплообменников 75 млн. рублей</h1>
 
 						<div class="slider__more">
 							<a href="#" class="slider__more-link">подробнее</a>
 							<img src="assets/icons/arrow.svg" alt="arrow">
 						</div>
-						
-						<div class="slider__arrow slider__arrow_down">
-							<img src="assets/icons/slider_arrow.svg" alt="">
-						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="slider__item">
+				<div class="container">
+					<div class="slider__item-content">
+						<h1 class="slider__text">«Оренбургский радиатор» инвестирует в производство алюминиевых теплообменников 75 млн. рублей</h1>
 
-						<div class="slider__indicators">
-							<div class="slider__dot slider__dot_active"></div>
-							<div class="slider__dot"></div>
+						<div class="slider__more">
+							<a href="#" class="slider__more-link">подробнее</a>
+							<img src="assets/icons/arrow.svg" alt="arrow">
 						</div>
 					</div>
 				</div>
 			</div>
+
 		</div>
     </section>
 
@@ -60,7 +80,7 @@
                 <button class="produce__btn">производство</button>
             </div>
 
-            <div class="produce__items">
+            <div class="produce__items produce__items_active">
                 <div class="produce__item">
                     <div class="produce__text">
                         <h2>теплооборудование</h2>
@@ -72,12 +92,25 @@
                     </div>
                 </div>
             </div>
+           
+			<div class="produce__items">
+                <div id="prod" class="produce__item">
+                    <div class="produce__text">
+                        <h2>производство алюминиевых радиаторов</h2>
+                    </div>
+                </div>
+				<div class="produce__item">
+                    <div class="produce__text">
+                        <h2>производство меднолатунных радиаторов</h2>
+                    </div>
+                </div>
+            </div>
 
 			<div class="produce__devider"></div>
         </div>
     </section>
 
-	<section class="reviews">
+	<section id="reviews" class="reviews">
 		<div class="container">
 			<h2 class="reviews__title title">Отзывы строительных компаний</h2>
 
@@ -101,7 +134,7 @@
 		</div>
 	</section>
 
-	<section class="contacts">
+	<section id="contacts" class="contacts">
 		<div class="container">
 			<h2 class="contacts__title title">Контакты</h2>
 
@@ -126,10 +159,12 @@
 		</div>
 
 		<div class="footer__wrapper">
-			<a href="#" class="footer__text">контакты</a>
+			<a href="#contacts" class="footer__text">контакты</a>
 			<a href="#" class="footer__text">политика конфидециальности</a>
 		</div>
 	</footer>
+
+	<script src="js/script.js"></script>
 
 </body>
 </html>

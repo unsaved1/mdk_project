@@ -6,6 +6,8 @@
     font-family: 'Oswald';
 }
 
+
+
 a {
     position: relative;
     text-decoration: none;
@@ -59,6 +61,12 @@ h1, h2{
 }
 
 
+@keyframes itemsAnim {
+    from {opacity: 0.7;}
+    50% {opacity: 0.9;}
+    to {opacity: 1;}
+}
+
 
 
 @import 'blocks/header';
@@ -67,3 +75,6 @@ h1, h2{
 @import 'blocks/reviews';
 @import 'blocks/contacts';
 @import 'blocks/footer';
+
+@import 'blocks/about';
+@import 'blocks/profile';
