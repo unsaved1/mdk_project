@@ -20,7 +20,16 @@
             <div class="header__item"><a href="#">Продукция</a></div>
         </nav>
 
-		<a class="header__profile-link" href="assets/pages/profile.html"><button class="header__btn btn">Личный кабинет</button></a>
+		<a class="header__profile-link" href="assets/pages/profile.html">
+			<button class="header__btn btn">Личный кабинет</button>
+
+			<div class="header__profile-btns">
+				<button data-profile-login class="header__btn btn btn_modal"><span>Войти</span></button>
+				<button data-register class="header__btn btn btn_modal"><span>Зарегистрироваться</span></button>
+			</div>
+		</a>
+
+		
         
     </header>
 
@@ -163,6 +172,50 @@
 			<a href="#" class="footer__text">политика конфидециальности</a>
 		</div>
 	</footer>
+
+
+
+
+
+	<div class="modal">
+		<div data-login-window class="modal__window">
+			<div data-modal-close class="modal__close">
+				<img src="assets/icons/close.svg" alt="close">
+			</div>
+
+			<div class="modal__title title">вход в личный кабинет</div>
+
+			<form class="modal__inputs">
+				<input type="text" class="modal__input" placeholder="ЛОГИН">
+				<input type="password" class="modal__input" placeholder="ПАРОЛЬ">
+			</form>
+
+			<div class="modal__btns">
+				<button data-modal-login class="modal__btn modal__btn_active">ВОЙТИ</button>
+				<button data-register class="modal__btn">РЕГИСТРАЦИЯ</button>
+			</div>
+		</div>
+		
+		<div data-register-window class="modal__window">
+			<div data-modal-close class="modal__close">
+				<img src="assets/icons/close.svg" alt="close">
+			</div>
+
+			<div class="modal__title title">РЕГИСТРАЦИЯ</div>
+
+			<form class="modal__inputs">
+				<input type="text" class="modal__input" placeholder="ФИО">
+				<input type="text" class="modal__input" placeholder="Город">
+				<input type="text" class="modal__input" placeholder="Логин">
+				<input type="email" class="modal__input" placeholder="Адрес электронной почты">
+				<input type="password" class="modal__input" placeholder="придумайте пароль">
+			</form>
+
+			<div class="modal__btns">
+				<button class="modal__btn modal__btn_active">РЕГИСТРАЦИЯ</button>
+			</div>
+		</div>
+	</div>
 
 	<script src="js/script.js"></script>
 

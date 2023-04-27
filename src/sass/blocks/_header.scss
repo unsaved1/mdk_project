@@ -38,10 +38,17 @@
         &:hover:after {
             display: none;
         }
+        &:hover {
+            .header__profile-btns {
+                display: block;
+            }
+        }
     }
     &__btn {
+        position: relative;
         width: 170px;
         height: 40px;
+        border: 2px solid #000;
         background-color: #000;
         font-size: 14px;
             color: #fff;
@@ -54,5 +61,25 @@
     }
     &_out {
         border-bottom: 1px solid #000;
+    }
+
+    &__profile-btns {
+        position: absolute;
+        display: none;
+        border: 1px solid #000;
+    }
+    .btn {
+        &_modal {
+            height: 30px;
+            font-size: 14px;
+            z-index: 10;
+
+            background: #fff;
+            color: #000;
+            border: none;
+            &:hover {
+                color: #265C73;
+            }
+        }
     }
 }
