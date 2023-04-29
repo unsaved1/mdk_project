@@ -7,7 +7,7 @@
     <title>Оренбургский радиатор</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body class="with-slider with-tabs">
     <header class="header">
         <nav class="header__nav">
             <div class="header__logo">
@@ -17,7 +17,7 @@
             <div class="header__item"><a href="assets/pages/about.html">О предприятии</a></div>
             <div class="header__item"><a href="#">Деятельность</a></div>
             <div class="header__item"><a href="#reviews">Отзывы</a></div>
-            <div class="header__item"><a href="#">Продукция</a></div>
+            <div class="header__item"><a href="assets/pages/goods.html">Продукция</a></div>
         </nav>
 
 		<a class="header__profile-link" href="assets/pages/profile.html">
@@ -38,8 +38,7 @@
 		<div class="slider__nav">
 			<div class="slider__nav_wrapper">
 				<div class="slider__indicators">
-					<!-- <div class="slider__dot slider__dot_active"></div>
-					<div class="slider__dot"></div> -->
+					
 				</div>
 		
 				<div class="slider__arrow slider__arrow_up">
@@ -163,6 +162,9 @@
 		</div>
 	</section>
 
+
+	
+
 	<footer class="footer">
 		<div class="text">Все права защищены © 2023
 		</div>
@@ -180,7 +182,8 @@
 	<div class="modal">
 		<div data-login-window class="modal__window">
 			<div data-modal-close class="modal__close">
-				<img src="assets/icons/close.svg" alt="close">
+				<span></span>
+				<span></span>
 			</div>
 
 			<div class="modal__title title">вход в личный кабинет</div>
@@ -198,24 +201,30 @@
 		
 		<div data-register-window class="modal__window">
 			<div data-modal-close class="modal__close">
-				<img src="assets/icons/close.svg" alt="close">
+				<span></span>
+				<span></span>
 			</div>
 
 			<div class="modal__title title">РЕГИСТРАЦИЯ</div>
 
-			<form class="modal__inputs">
+			<form id="modal-form" class="modal__inputs">
 				<input type="text" class="modal__input" placeholder="ФИО">
 				<input type="text" class="modal__input" placeholder="Город">
 				<input type="text" class="modal__input" placeholder="Логин">
 				<input type="email" class="modal__input" placeholder="Адрес электронной почты">
 				<input type="password" class="modal__input" placeholder="придумайте пароль">
+	
+				<div class="modal__btns">
+					<button class="modal__btn modal__btn_active">РЕГИСТРАЦИЯ</button>
+				</div>
 			</form>
 
-			<div class="modal__btns">
-				<button class="modal__btn modal__btn_active">РЕГИСТРАЦИЯ</button>
-			</div>
+	
 		</div>
 	</div>
+
+
+
 
 	<script src="js/script.js"></script>
 
