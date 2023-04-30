@@ -3,7 +3,7 @@
 
 
 * {
-    font-family: 'Oswald';
+    font-family: 'Oswald', sans-serif;
 }
 html {
     height: 100%;
@@ -60,8 +60,8 @@ h1, h2{
 }
 
 .title {
-    font-family: 'Oswald';
-    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
     font-size: 28px;
     text-transform: uppercase;
     text-align: center;
@@ -90,6 +90,7 @@ h1, h2{
 @import 'blocks/about';
 @import 'blocks/profile';
 @import 'blocks/goods';
+@import 'blocks/product';
 
 @import 'blocks/modal';
 @import 'blocks/media';

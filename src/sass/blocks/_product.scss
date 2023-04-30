@@ -1,0 +1,119 @@
+.product {
+    padding: 40px 0 100px 0;
+    .container {
+        width: 960px;
+    }
+    &__item {
+        margin-top: 40px;
+        min-height: 280px;
+        padding: 10px 0;
+
+        display: flex;
+        justify-content: space-around;
+    }
+    &__wrapper {
+        max-width: 450px;
+
+        display: flex;
+        flex-direction: column;
+    }
+    &__order {
+        flex: 10%;
+
+        font-family: 'Roboto';
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: uppercase;
+
+        color: #404040;
+    }
+    &__descr {
+        flex: 50%;
+
+        font-family: 'Roboto';
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 35px;
+        text-transform: uppercase;
+
+        color: #404040;
+    }
+    &__price {
+        flex: 20%;
+        font-family: 'Roboto';
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+
+        color: #265C73;
+    }
+    &__btn {
+        flex: 10%;
+        width: 270px;
+
+        background: #FFFFFF;
+        border: 1px solid #3C3C3C;
+
+        transition: 0.2s all;
+        &:hover {
+            border: none;
+            background-color: #265C73;
+            color: #fff;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 60px;
+
+        font-family: 'Oswald';  
+        font-weight: 400;
+        font-size: 22px;
+        
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        
+        color: #265C73;
+    }
+    &__text {
+        margin-top: 20px;
+        max-width: 85%;
+
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+
+        color: #303030;
+    }
+
+    &__table {
+        margin-top: 20px;
+        width: 450px;
+
+        border-right: 1px solid #000;
+        border-bottom: 1px solid #000;
+    }
+    &__row {
+        display: flex;
+    }
+    &__feature {
+        flex: 70%;
+
+        padding: 5px 10px;
+        
+        border: 1px solid #000;
+        border-bottom: none;
+        border-right: none;
+    }
+    &__value {
+        flex: 30%;
+
+        padding: 5px 10px;
+        
+        border: 1px solid #000;
+        border-bottom: none;
+        border-right: none;
+    }
+}       

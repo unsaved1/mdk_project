@@ -10,25 +10,27 @@
 <body>
 
     <header class="header header_out">
-        <nav class="header__nav">
-            <div class="header__logo">
-                <a href="../../index.html"><img src="../images/logo.png" alt="logo"></a>
-            </div>
+       <div class="header__wrapper">
+            <nav class="header__nav">
+                <div class="header__logo">
+                    <a href="../../index.html"><img src="../images/logo.png" alt="logo"></a>
+                </div>
 
-            <div class="header__item"><a href="about.html">О предприятии</a></div>
-            <div class="header__item"><a href="#">Деятельность</a></div>
-            <div class="header__item"><a href="../../index.html#reviews">Отзывы</a></div>
-            <div class="header__item"><a href="#">Продукция</a></div>
-        </nav>
+                <div class="header__item"><a href="about.html">О предприятии</a></div>
+                <div class="header__item"><a href="#">Деятельность</a></div>
+                <div class="header__item"><a href="../../index.html#reviews">Отзывы</a></div>
+                <div class="header__item"><a href="goods.html">Продукция</a></div>
+            </nav>
 
-        <a class="header__profile-link" href="profile.html">
-			<button class="header__btn btn">Личный кабинет</button>
+            <a class="header__profile-link" href="profile.html">
+                <button class="header__btn btn">Личный кабинет</button>
 
-			<div class="header__profile-btns">
-				<button data-profile-login class="header__btn btn btn_modal"><span>Войти</span></button>
-				<button data-register class="header__btn btn btn_modal"><span>Зарегистрироваться</span></button>
-			</div>
-		</a>
+                <div class="header__profile-btns">
+                    <button data-profile-login class="header__btn btn btn_modal"><span>Войти</span></button>
+                    <button data-register class="header__btn btn btn_modal"><span>Зарегистрироваться</span></button>
+                </div>
+            </a>
+       </div>
     </header>
 
 
@@ -43,7 +45,7 @@
                 <div class="goods__wrapper">
 
                     <div class="goods__item">
-                        <a href="#" class="goods__img">
+                        <a href="product.html" class="goods__img">
                             <img src="../images/goods/radiators/img1.png" alt="item1">
                         </a>
 
@@ -214,13 +216,15 @@
 
 
     <footer class="footer">
-		<div class="text">Все права защищены © 2023
-		</div>
+        <div class="footer__wrapper">
+            <div class="footer__text">Все права защищены © 2023
+            </div>
 
-		<div class="footer__wrapper">
-			<a href="../../index.html#contacts" class="footer__text">контакты</a>
-			<a href="#" class="footer__text">политика конфидециальности</a>
-		</div>
+            <div class="footer__block">
+                <a href="../../index.html#contacts" class="footer__text">контакты</a>
+                <a href="#" class="footer__text">политика конфидециальности</a>
+            </div>
+        </div>
 	</footer>
 
 

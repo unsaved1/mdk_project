@@ -9,28 +9,27 @@
 </head>
 <body class="with-slider with-tabs">
     <header class="header">
-        <nav class="header__nav">
-            <div class="header__logo">
-                <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
-            </div>
-
-            <div class="header__item"><a href="assets/pages/about.html">О предприятии</a></div>
-            <div class="header__item"><a href="#">Деятельность</a></div>
-            <div class="header__item"><a href="#reviews">Отзывы</a></div>
-            <div class="header__item"><a href="assets/pages/goods.html">Продукция</a></div>
-        </nav>
-
-		<a class="header__profile-link" href="assets/pages/profile.html">
-			<button class="header__btn btn">Личный кабинет</button>
-
-			<div class="header__profile-btns">
-				<button data-profile-login class="header__btn btn btn_modal"><span>Войти</span></button>
-				<button data-register class="header__btn btn btn_modal"><span>Зарегистрироваться</span></button>
-			</div>
-		</a>
-
-		
-        
+		<div class="header__wrapper">
+			<nav class="header__nav">
+				<div class="header__logo">
+					<a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+				</div>
+	
+				<div class="header__item"><a href="assets/pages/about.html">О предприятии</a></div>
+				<div class="header__item"><a href="#">Деятельность</a></div>
+				<div class="header__item"><a href="#reviews">Отзывы</a></div>
+				<div class="header__item"><a href="assets/pages/goods.html">Продукция</a></div>
+			</nav>
+	
+			<a class="header__profile-link" href="assets/pages/profile.html">
+				<button class="header__btn btn">Личный кабинет</button>
+	
+				<div class="header__profile-btns">
+					<button data-profile-login class="header__btn btn btn_modal"><span>Войти</span></button>
+					<button data-register class="header__btn btn btn_modal"><span>Зарегистрироваться</span></button>
+				</div>
+			</a>	
+		</div> 
     </header>
 
     <section class="slider">
@@ -166,12 +165,14 @@
 	
 
 	<footer class="footer">
-		<div class="text">Все права защищены © 2023
-		</div>
-
 		<div class="footer__wrapper">
-			<a href="#contacts" class="footer__text">контакты</a>
-			<a href="#" class="footer__text">политика конфидециальности</a>
+			<div class="text">Все права защищены © 2023
+			</div>
+	
+			<div class="footer__block">
+				<a href="#contacts" class="footer__text">контакты</a>
+				<a href="#" class="footer__text">политика конфидециальности</a>
+			</div>
 		</div>
 	</footer>
 
