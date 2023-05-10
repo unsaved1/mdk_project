@@ -7,29 +7,45 @@
     <title>Оренбургский радиатор</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="with-slider with-tabs">
+<body class="with-slider #with-tabs">
     <header class="header">
+		<div class="header__logo">
+			<a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+		</div>
+
+		<div class="header__backing"></div>
+
 		<div class="header__wrapper">
 			<nav class="header__nav">
-				<div class="header__logo">
+				<!-- <div class="header__logo">
 					<a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
-				</div>
+				</div> -->
 	
 				<div class="header__item"><a href="assets/pages/about.html">О предприятии</a></div>
-				<div class="header__item"><a href="#">Деятельность</a></div>
+				<div class="header__item"><a href="assets/pages/about-produce.html">Деятельность</a></div>
 				<div class="header__item"><a href="#reviews">Отзывы</a></div>
 				<div class="header__item"><a href="assets/pages/goods.html">Продукция</a></div>
 			</nav>
 	
 			<a class="header__profile-link" href="assets/pages/profile.html">
 				<button class="header__btn btn">Личный кабинет</button>
-	
+
 				<div class="header__profile-btns">
 					<button data-profile-login class="header__btn btn btn_modal"><span>Войти</span></button>
 					<button data-register class="header__btn btn btn_modal"><span>Зарегистрироваться</span></button>
 				</div>
 			</a>	
 		</div> 
+
+		<a class="header__profile-link-img" href="assets/pages/profile.html">
+			<img src="assets/icons/user.svg" alt="user">
+		</a>	
+
+		<div class="header__hamburger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
     </header>
 
     <section class="slider">
@@ -80,7 +96,7 @@
 		</div>
     </section>
 
-    <section class="produce">
+    <!-- <section class="produce">
         <div class="container">
             <div class="produce__btns">
                 <button class="produce__btn_active produce__btn">Продукция</button>
@@ -88,36 +104,36 @@
             </div>
 
             <div class="produce__items produce__items_active">
-                <div class="produce__item">
+                <a href="assets/pages/goods.html#thermal" class="produce__item">
                     <div class="produce__text">
                         <h2>теплооборудование</h2>
                     </div>
-                </div>
-				<div class="produce__item">
+                </a>
+				<a href="assets/pages/goods.html#radiators" class="produce__item">
                     <div class="produce__text">
                         <h2>Радиаторы</h2>
                     </div>
-                </div>
+                </a>
             </div>
            
 			<div class="produce__items">
-                <div id="prod" class="produce__item">
+                <a href="assets/pages/about-produce.html#alum" id="prod" class="produce__item">
                     <div class="produce__text">
                         <h2>производство алюминиевых радиаторов</h2>
                     </div>
-                </div>
-				<div class="produce__item">
+                </a>
+				<a href="assets/pages/about-produce.html#Cu" class="produce__item">
                     <div class="produce__text">
                         <h2>производство меднолатунных радиаторов</h2>
                     </div>
-                </div>
+                </a>
             </div>
 
 			<div class="produce__devider"></div>
         </div>
-    </section>
+    </section> -->
 
-	<section id="reviews" class="reviews">
+	<!-- <section id="reviews" class="reviews">
 		<div class="container">
 			<h2 class="reviews__title title">Отзывы строительных компаний</h2>
 
@@ -139,9 +155,9 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
-	<section id="contacts" class="contacts">
+	<!-- <section id="contacts" class="contacts">
 		<div class="container">
 			<h2 class="contacts__title title">Контакты</h2>
 
@@ -159,7 +175,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 
 	
@@ -190,14 +206,17 @@
 			<div class="modal__title title">вход в личный кабинет</div>
 
 			<form class="modal__inputs">
-				<input type="text" class="modal__input" placeholder="ЛОГИН">
-				<input type="password" class="modal__input" placeholder="ПАРОЛЬ">
+				<input name="login" required type="text" class="modal__input" placeholder="ЛОГИН">
+				<input name="password" required type="password" class="modal__input" placeholder="ПАРОЛЬ">
+				
+				<div class="modal__btns">
+					<button data-modal-login class="modal__btn modal__btn_active">ВОЙТИ</button>
+					<button data-register class="modal__btn">РЕГИСТРАЦИЯ</button>
+				</div>
+			
 			</form>
 
-			<div class="modal__btns">
-				<button data-modal-login class="modal__btn modal__btn_active">ВОЙТИ</button>
-				<button data-register class="modal__btn">РЕГИСТРАЦИЯ</button>
-			</div>
+			
 		</div>
 		
 		<div data-register-window class="modal__window">
@@ -209,11 +228,11 @@
 			<div class="modal__title title">РЕГИСТРАЦИЯ</div>
 
 			<form id="modal-form" class="modal__inputs">
-				<input type="text" class="modal__input" placeholder="ФИО">
-				<input type="text" class="modal__input" placeholder="Город">
-				<input type="text" class="modal__input" placeholder="Логин">
-				<input type="email" class="modal__input" placeholder="Адрес электронной почты">
-				<input type="password" class="modal__input" placeholder="придумайте пароль">
+				<input name="name" required type="text" class="modal__input" placeholder="ФИО">
+				<input name="city" required type="text" class="modal__input" placeholder="Город">
+				<input name="login" required type="text" class="modal__input" placeholder="Логин">
+				<input name="email" required type="email" class="modal__input" placeholder="Адрес электронной почты">
+				<input name="password" required type="password" class="modal__input" placeholder="придумайте пароль">
 	
 				<div class="modal__btns">
 					<button class="modal__btn modal__btn_active">РЕГИСТРАЦИЯ</button>

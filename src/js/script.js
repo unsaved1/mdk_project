@@ -2,6 +2,15 @@
 
 const body = document.querySelector('body');
 
+
+function lockScroll() {
+    body.style.overflowY = 'hidden';
+}
+
+function unlockScroll() {
+    body.style.overflowY = 'scroll';
+}
+
 //slider
 
 if (body.classList.contains('with-slider')) {
@@ -104,7 +113,7 @@ function slider() {
         dots[slideIndex].classList.add('slider__dot_active');
     }
 
-    }
+}
 
 // tabs
 
@@ -120,32 +129,32 @@ function tabs() {
 
 
     triggersParent.addEventListener('click', (e) => {
-    const target = e.target;
+        const target = e.target;
 
-    if (target.classList.contains('produce__btn')) {
-    triggers.forEach((trigger, i) => {
-        if (target == trigger) {
-            hideTabContent();
-            showTabContent(i);
+        if (target.classList.contains('produce__btn')) {
+            triggers.forEach((trigger, i) => {
+                    if (target == trigger) {
+                        hideTabContent();
+                        showTabContent(i);
+                    }
+            });
         }
-    });
-    }
     });
 
 
     function hideTabContent() {
-    items.forEach(item => {
-    item.style.display = 'none';
-    })
+        items.forEach(item => {
+            item.style.display = 'none';
+        })
 
-    triggers.forEach(trigger => {
-    trigger.classList.remove('produce__btn_active');
-    })
+        triggers.forEach(trigger => {
+            trigger.classList.remove('produce__btn_active');
+        })
     };
 
     function showTabContent(i = 0) {
-    items[i].style.display = 'flex';
-    triggers[i].classList.add('produce__btn_active');
+        items[i].style.display = 'flex';
+        triggers[i].classList.add('produce__btn_active');
     };
 
     hideTabContent();
@@ -210,14 +219,39 @@ modal.addEventListener('keydown', (e) => {
 function openModal(window = modal, classActive = 'modal_active') {
     // modal.classList.add('modal_active');
     window.classList.add(`${classActive}`);
-    document.querySelector('body').style.overflowY = 'hidden';
+    lockScroll();
 }
 
 function closeModal(window = modal, classActive = 'modal_active') {
     window.classList.remove(`${classActive}`);
-    document.querySelector('body').style.overflowY = 'scroll';
+    unlockScroll();
 }
 
 
-    
 
+// hamburger menu
+
+const hamburger = document.querySelector('.header__hamburger'),
+      menu = document.querySelector('.header__wrapper'),
+      menuBacking = document.querySelector('.header__backing');
+
+hamburger.addEventListener('click', () => {
+    menu.classList.toggle('header__wrapper_active');
+    menuBacking.classList.toggle('header__backing_active');
+    if (menu.classList.contains('header__wrapper_active')) {
+        lockScroll(); 
+    } else {
+        unlockScroll();
+    }
+})
+
+menuBacking.addEventListener('click', (e) => {
+    if(e.target.classList.contains('header__backing') && menu.classList.contains('header__wrapper_active')) {
+        menu.classList.remove('header__wrapper_active');
+        menuBacking.classList.remove('header__backing_active');
+        unlockScroll();
+    }
+})
+
+
+    

@@ -9,28 +9,44 @@
 </head>
 <body>
 
-    <header class="header header_out">
-       <div class="header__wrapper">
-            <nav class="header__nav">
-                <div class="header__logo">
-                    <a href="../../index.html"><img src="../images/logo.png" alt="logo"></a>
-                </div>
+    <header class="header">
+		<div class="header__logo">
+			<a href="../../index.html"><img src="../images/logo.png" alt="logo"></a>
+		</div>
 
-                <div class="header__item"><a href="about.html">О предприятии</a></div>
-                <div class="header__item"><a href="#">Деятельность</a></div>
-                <div class="header__item"><a href="../../index.html#reviews">Отзывы</a></div>
-                <div class="header__item"><a href="goods.html">Продукция</a></div>
-            </nav>
+		<div class="header__backing"></div>
 
-            <a class="header__profile-link" href="profile.html">
-                <button class="header__btn btn">Личный кабинет</button>
+		<div class="header__wrapper">
+			<nav class="header__nav">
+				<!-- <div class="header__logo">
+					<a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+				</div> -->
+	
+				<div class="header__item"><a href="about.html">О предприятии</a></div>
+				<div class="header__item"><a href="about-produce.html">Деятельность</a></div>
+				<div class="header__item"><a href="../../index.html#reviews">Отзывы</a></div>
+				<div class="header__item"><a href="goods.html">Продукция</a></div>
+			</nav>
+	
+			<a class="header__profile-link" href="profile.html">
+				<button class="header__btn btn">Личный кабинет</button>
 
-                <div class="header__profile-btns">
-                    <button data-profile-login class="header__btn btn btn_modal"><span>Войти</span></button>
-                    <button data-register class="header__btn btn btn_modal"><span>Зарегистрироваться</span></button>
-                </div>
-            </a>
-       </div>
+				<div class="header__profile-btns">
+					<button data-profile-login class="header__btn btn btn_modal"><span>Войти</span></button>
+					<button data-register class="header__btn btn btn_modal"><span>Зарегистрироваться</span></button>
+				</div>
+			</a>	
+		</div> 
+
+		<a class="header__profile-link-img" href="profile.html">
+			<img src="../icons/user.svg" alt="user">
+		</a>	
+
+		<div class="header__hamburger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
     </header>
 
 
@@ -39,7 +55,7 @@
         <div class="container">
             <h1 class="goods__title title">Продукция</h1>
 
-            <div class="goods__radiators">
+            <div id="radiators" class="goods__radiators">
                 <h2 class="goods__subtitle">Радиаторы</h2>
 
                 <div class="goods__wrapper">
@@ -160,55 +176,54 @@
 
                         <button class="goods__btn">в корзину</button>
                     </div>
+                </div>
 
+                <div id="thermal" class="goods__thermal">
+
+                    <h2 class="goods__subtitle goods__subtitle_warm">Теплооборудование</h2>
+                    
+                    <div class="goods__wrapper">
+                        <div class="goods__item">
+                            <a href="#" class="goods__img">
+                                <img src="../images/goods/thermal/img1.png" alt="item1">
+                            </a>
+
+                            <div class="goods__order">Арт. 12876448</div>
+                            <div class="goods__descr">Радиатор Rifar Monolit 500 8 секций боковое подключения биметалл белый</div>
+                            <div class="goods__price">7000 ₽ / шт.
+                            </div>
+
+                            <button class="goods__btn">в корзину</button>
+                        </div>
+                    
+                        <div class="goods__item">
+                            <a href="#" class="goods__img">
+                                <img src="../images/goods/thermal/img2.png" alt="item1">
+                            </a>
+
+                            <div class="goods__order">Арт. 12876448</div>
+                            <div class="goods__descr">Радиатор Rifar Monolit 500 8 секций боковое подключения биметалл белый</div>
+                            <div class="goods__price">7000 ₽ / шт.
+                            </div>
+
+                            <button class="goods__btn">в корзину</button>
+                        </div>
+                    
+                        <div class="goods__item">
+                            <a href="#" class="goods__img">
+                                <img src="../images/goods/thermal/img3.png" alt="item1">
+                            </a>
+
+                            <div class="goods__order">Арт. 12876448</div>
+                            <div class="goods__descr">Радиатор Rifar Monolit 500 8 секций боковое подключения биметалл белый</div>
+                            <div class="goods__price">7000 ₽ / шт.
+                            </div>
+
+                            <button class="goods__btn">в корзину</button>
+                        </div>
+                    </div>
 
                 </div>
-            
-                <h2 class="goods__subtitle goods__subtitle_warm">Теплооборудование</h2>
-
-                <div class="goods__wrapper">
-
-                    <div class="goods__item">
-                        <a href="#" class="goods__img">
-                            <img src="../images/goods/thermal/img1.png" alt="item1">
-                        </a>
-
-                        <div class="goods__order">Арт. 12876448</div>
-                        <div class="goods__descr">Радиатор Rifar Monolit 500 8 секций боковое подключения биметалл белый</div>
-                        <div class="goods__price">7000 ₽ / шт.
-                        </div>
-
-                        <button class="goods__btn">в корзину</button>
-                    </div>
-                
-                    <div class="goods__item">
-                        <a href="#" class="goods__img">
-                            <img src="../images/goods/thermal/img2.png" alt="item1">
-                        </a>
-
-                        <div class="goods__order">Арт. 12876448</div>
-                        <div class="goods__descr">Радиатор Rifar Monolit 500 8 секций боковое подключения биметалл белый</div>
-                        <div class="goods__price">7000 ₽ / шт.
-                        </div>
-
-                        <button class="goods__btn">в корзину</button>
-                    </div>
-                
-                    <div class="goods__item">
-                        <a href="#" class="goods__img">
-                            <img src="../images/goods/thermal/img3.png" alt="item1">
-                        </a>
-
-                        <div class="goods__order">Арт. 12876448</div>
-                        <div class="goods__descr">Радиатор Rifar Monolit 500 8 секций боковое подключения биметалл белый</div>
-                        <div class="goods__price">7000 ₽ / шт.
-                        </div>
-
-                        <button class="goods__btn">в корзину</button>
-                    </div>
-
-                </div>
-            
             </div>
         </div>
     </section>

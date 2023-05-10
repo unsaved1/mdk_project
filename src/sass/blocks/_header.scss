@@ -1,6 +1,10 @@
 .header {
     height: 80px;
     padding: 0 170px;
+    background: #fff;
+    &__hamburger {
+        display: none;
+    }
     &__wrapper {
         max-width: 1650px;
         margin: 0 auto;
@@ -8,6 +12,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    &__backing {
+        display: none;
     }
     &__nav {
         width: 700px;
@@ -70,6 +77,7 @@
     }
 
     &__profile-btns {
+        width: 100%;
         position: absolute;
         display: none;
         border: 1px solid #000;
@@ -83,6 +91,7 @@
             background: #fff;
             color: #000;
             border: none;
+            border-right: 1px solid #000;
             &:hover {
                 color: #265C73;
             }

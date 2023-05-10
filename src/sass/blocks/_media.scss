@@ -1,5 +1,315 @@
+@media (max-width: 1260px) {
+    .container {
+        width: 800px;
+    }
+    .header {
+        &__nav {
+            max-width: 480px;
+        }
+        &__item {
+            font-size: 14px;
+        }
+        &__btn {
+            width: 120px;
+            font-size: 12px;
+        }
+        .btn {
+            &_modal {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .slider {
+        &__nav {
+            width: 800px;
+        }
+    }
+
+    .goods, .product {
+        .container {
+            width: 800px;
+        }
+        &__wrapper {
+            grid-template-columns: repeat(auto-fill,minmax(230px,1fr));
+        }
+    }
+}
+
 @media (max-width: 992px) {
     .container {
-        width: 768px;
+        width: 720px;
+    }
+
+    .header {
+        padding: 0 24px;
+        &__item {
+            font-size: 14px;
+        }
+        &__btn {
+            width: 120px;
+            font-size: 12px;
+        }
+        .btn {
+            &_modal {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .slider {
+        &__nav {
+            left: 0;
+            transform: unset;
+            width: 720px;
+        }
+        &__item {
+            .container {
+                width: 100%;
+            }
+        }
+    }
+
+    .about-produce, .about {
+        .container {
+            width: 720px;
+        }
+        &__img {
+            width: 100%;
+        }
+    }
+
+    .goods, .product, .profile {
+        .container {
+            width: 720px;
+        }
+        &__wrapper {
+            grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
+        }
+    }
+
+    .footer {
+        padding: 0 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+
+    .goods, .product, .about, .about-produce, .profile {
+        .container {
+            width: 540px;
+        }
+    }
+
+    .header {
+        &__nav {
+            max-width: 400px;
+        }
+        &__logo {
+            margin-right: 0;
+        }
+        &__item {
+            font-size: 13px;
+        }
+    }
+
+    .slider {
+        &__nav {
+            width: 540px;
+        }
+    }
+
+    .profile {
+        &__photo {
+            width: 140px;
+            height: 140px;
+        }
+    }
+
+    .product {
+        img {
+            width: 230px; 
+        }
+        &__wrapper {
+            max-width: 270px;
+        }
+        &__order {
+            font-size: 12px;
+        }
+        &__descr {
+            font-size: 18px;
+        }
+        &__price {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .goods, .product, .about, .about-produce, .profile, .product {
+        .container {
+            width: 100%;
+            padding: 0 20px;
+        }
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 0;
+        z-index: 100;
+        &__hamburger {
+            position: absolute;
+            z-index: 15;
+            top: 22px;
+            right: 24px;
+
+            
+            display: flex;
+            flex-direction: column;
+            span {
+                width: 35px;
+                height: 2px;
+                background: #000;
+                margin-top: 6px;
+                &:hover:after {
+                    display: none;
+                }
+            }
+        }
+        &__backing {
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            &_active {
+                display: block;
+            }
+        }
+        &__wrapper {
+            background: rgba(gray, 1);
+
+            position: absolute;
+            left: -100%;
+
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            height: 100vh;
+            width: 65%;
+            padding-left: 20px;
+
+            transition: 0.4s all;
+            &_active {
+                left: 0;
+            }
+
+        }
+        &__logo {
+            position: absolute;
+            top: 5px;
+            left: 0;
+        }
+        &__nav {
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+
+            width: unset;
+            height: 30%;
+            order: 2;
+            flex-direction: column;
+        }
+        &__item {
+            font-size: 16px;
+            a {
+                color: #fff;
+                letter-spacing: 2px;
+            }
+        }
+        &__profile-link {
+            display: none;
+        }
+        &__profile-link-img {
+            position: absolute;
+            top: 20px;
+            right: 70px;
+
+            display: block;
+            width: 30px;
+            height: 30px;
+
+            &:hover:after {
+                display: none;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .slider {
+        margin-top: 80px;
+        &__nav {
+            width: 100%;
+            padding: 0;
+            &_wrapper {
+                width: 100%;
+            }
+        }
+        &__item {
+            .container {
+                padding: 0;
+            }
+        }
+        &__item-content {
+            width: 100%;
+        }
+        &__text {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    .footer {
+        &__text {
+            font-size: 12px;
+        }
+    }
+
+
+    .about, .about-produce, .goods, .product, .profile {
+        margin-top: 80px;
+        padding: 0 0 40px 0;
+    }
+
+    .profile {
+        &__desk {
+            padding: 10px;
+        }
+        &__personal-info {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__wrapper {
+            width: 100%;
+        }
+    }
+
+    .product {
+        &__item {
+            flex-wrap: wrap;
+        }
+        &__table {
+            width: 100%;
+        }
     }
 }

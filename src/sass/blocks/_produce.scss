@@ -43,6 +43,9 @@
         &:hover {
             box-shadow:0 0 0px 10px #265C73
         }
+        &:hover:after {
+            display: none;
+        }
     }
     &__item:nth-child(1) {
         margin-left: 100px;
