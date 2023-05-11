@@ -34,6 +34,21 @@
             grid-template-columns: repeat(auto-fill,minmax(230px,1fr));
         }
     }
+
+    .contacts {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__col2 {
+            margin: 0;
+            margin-top: 50px;
+        }
+        &__text {
+            a {
+                font-size: 13px;
+            }
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -91,6 +106,12 @@
     .footer {
         padding: 0 24px;
     }
+
+    .reviews {
+        &__text {
+            font-size: 16px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -106,13 +127,13 @@
 
     .header {
         &__nav {
-            max-width: 400px;
+            max-width: 310px;
         }
         &__logo {
             margin-right: 0;
         }
         &__item {
-            font-size: 13px;
+            font-size: 12px;
         }
     }
 
@@ -144,6 +165,51 @@
         }
         &__price {
             font-size: 18px;
+        }
+    }
+
+    .produce {
+        &__item {
+            margin: 0;
+            margin-left: 15px;
+            &:nth-child(1) {
+                margin: 0;
+                margin-right: 15px;
+            }
+        }
+        &__btns {
+            margin-left: 0;
+        }
+    }
+
+    .reviews {
+        .container {
+            padding: 0;
+        }
+        &__stars {
+            width: 140px;
+        }
+    }
+
+    .contacts {
+        .container {
+            padding: 0 20px 40px 20px;
+        }
+        &__text {
+            a {
+                &:hover:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 577px) {
+    .header {
+        &__wrapper {
+            margin: 0;
+            width: 100%;
         }
     }
 }
@@ -280,8 +346,16 @@
     }
 
     .footer {
+        padding: 20px 0;
+        &__wrapper {
+            flex-direction: column-reverse;
+        }
         &__text {
-            font-size: 12px;
+            font-size: 14px;
+            min-height: 20px;
+        }
+        .text {
+            font-size: 14px;
         }
     }
 
@@ -310,6 +384,43 @@
         }
         &__table {
             width: 100%;
+        }
+    }
+
+    .produce {
+        &__items {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__item {
+            margin: 0;
+            margin-top: 30px;
+            &:nth-child(1) {
+                margin: 0;
+            }
+        }
+        &__btns {
+            margin: 0 auto;
+        }
+    }
+    .reviews {
+        .container {
+            padding: 0 20px;
+        }
+        &__item {
+            margin-top: 20px;
+            padding: 20px;
+        }
+        &__name {
+            font-size: 18px;
+        }
+        &__stars {
+            width: 100px;
+        }
+    }
+    .contacts {
+        &__text {
+            max-width: 80%;
         }
     }
 }
