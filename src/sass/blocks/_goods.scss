@@ -30,6 +30,8 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding: 10px;
+        border: 2px solid #000;
     }
     &__img {
         cursor: pointer;
@@ -76,10 +78,13 @@
         background-color: #fff;
 
         transition: 0.2s  all;
+        border: none;
+        background-color: #265C73;
+        color: #fff;
         &:hover {
-            border: none;
-            background-color: #265C73;
-            color: #fff;
+            border: 1px solid #000;
+            background: #fff;
+            color: #000;
         }
     }
 } 
